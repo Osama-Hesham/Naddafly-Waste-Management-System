@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home" android:title="Home" android:icon="@drawable/house_ico" />
+    <item android:id="@+id/reward" android:title="Reward" android:icon="@drawable/reward_ico" />
+    <item android:id="@+id/profile" android:title="Profile" android:icon="@drawable/profile_ico" />
+    <item android:id="@+id/cameraFragment" android:title="Camera" android:icon="@drawable/camera_ico" />
+</menu>

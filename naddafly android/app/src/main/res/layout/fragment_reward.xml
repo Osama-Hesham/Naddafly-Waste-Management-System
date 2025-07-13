@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Reward"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="30dp"
+
+        >
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:gravity="center"
+      android:layout_gravity="center"
+
+      >
+      <TextView
+
+          android:id="@+id/Rewards"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="Rewards"
+          android:layout_marginTop="10dp"
+          android:layout_marginBottom="10dp"
+          android:background="@null"
+
+          android:fontFamily="sans-serif"
+          android:textAlignment="center"
+          android:textSize="30dp"
+          android:textStyle="bold"
+          android:textColor="@color/darkGreen"
+            android:layout_marginLeft="18dp"
+          android:layout_marginRight="35dp"
+          />
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_gravity="center"
+          android:layout_height="30dp"
+          android:background="@drawable/edit_text_custom"
+          android:backgroundTint="@color/darkGreen">
+
+          <ImageView
+              android:id="@+id/imageView5"
+              android:layout_width="41dp"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_weight="1"
+              android:src="@drawable/dollar_ico" />
+
+          <TextView
+              android:id="@+id/CoinsTextView"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+
+              android:layout_gravity="center"
+              android:layout_marginRight="10dp"
+              android:text="22"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:textColor="@color/white"/>
+      </LinearLayout>
+
+  </LinearLayout>
+
+        <TextView
+            android:id="@+id/RedeemExplainTextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Redeem Random Voucher for 10 coins"
+            android:fontFamily="sans-serif"
+            android:layout_marginTop="22dp"
+            android:paddingLeft="18dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/darkGreen"/>
+
+        <Button
+            android:id="@+id/RedeemBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/darkGreen"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:text="Redeem" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardBackgroundColor="#EDEEEE">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ImageImageViewUserProduct"
+            android:layout_width="110dp"
+            android:layout_height="108dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background" /> <!-- Set a default image or use a placeholder image -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TitleTextViewUserProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="Title"/>
+
+
+
+            <TextView
+                android:id="@+id/PriceTextViewUserProduct"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/GarbageID"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/navigate_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Navigate"
+                    android:backgroundTint="@color/green"
+                    android:textColor="@color/white" />
+                <Button
+                    android:id="@+id/collected_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Collected"
+                    android:backgroundTint="@color/green"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

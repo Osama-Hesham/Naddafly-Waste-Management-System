@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/collector_nav"
+    app:startDestination="@id/garbageList2">
+
+    <fragment
+        android:id="@+id/garbageList2"
+        android:name="com.example.naddafly.Maps.GarbageList"
+        android:label="fragment_garbage_list"
+        tools:layout="@layout/fragment_garbage_list" />
+    <fragment
+        android:id="@+id/collectorProfile"
+        android:name="com.example.naddafly.CollectorProfile"
+        android:label="fragment_collector_profile"
+        tools:layout="@layout/fragment_collector_profile" />
+</navigation>

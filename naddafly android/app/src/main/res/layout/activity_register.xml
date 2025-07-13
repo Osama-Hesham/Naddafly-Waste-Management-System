@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+
+    android:layout_marginStart="1dp"
+    android:layout_marginTop="1dp"
+    android:layout_marginEnd="1dp"
+    android:layout_marginBottom="1dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/Label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:editable="false"
+        android:ems="10"
+        android:fontFamily="sans-serif"
+        android:inputType="none"
+        android:text="Create Your Naddafly Account"
+        android:textAlignment="center"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="User Name"
+        android:drawableStart="@drawable/profile_ico"
+        android:drawablePadding="8dp"
+        android:elevation="8dp"
+        android:background="@drawable/edit_text_custom"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        />
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Email"
+        android:drawableStart="@drawable/email_ico"
+        android:drawablePadding="8dp"
+        android:elevation="8dp"
+        android:background="@drawable/edit_text_custom"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Password"
+        android:drawableStart="@drawable/password_ico"
+        android:drawablePadding="8dp"
+        android:elevation="8dp"
+        android:background="@drawable/edit_text_custom"
+        android:paddingLeft="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp">
+
+
+        <RadioButton
+            android:id="@+id/OptionDetector"
+            android:layout_width="149dp"
+            android:layout_height="41dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:checked="false"
+            android:padding="4dp"
+            android:text="Detector"
+            android:buttonTint="@color/green"
+            android:textAlignment="center"
+            android:textSize="20sp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.858"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.727"
+            android:layout_marginEnd="75dp"/>
+
+        <RadioButton
+            android:id="@+id/OptionCollector"
+            android:layout_width="146dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:checked="false"
+            android:padding="4dp"
+            android:text="Collector"
+            android:buttonTint="@color/green"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.166"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.727" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/RegisterBtn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Register"
+        android:backgroundTint="@color/green"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="22dp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold"
+        android:elevation="8dp"
+
+        />
+
+    <EditText
+        android:id="@+id/LoginHyperText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:ems="10"
+        android:editable="false"
+        android:fontFamily="sans-serif"
+        android:inputType="none"
+        android:text="Already have an account ? Login"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        android:textColor="@color/green"
+
+        />
+
+</LinearLayout>
